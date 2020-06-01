@@ -93,6 +93,7 @@
 
 #torso {
    background: url(../assets/updated/torso.svg);
+   background-repeat: no-repeat;
    background-size: contain;
    position: absolute;
    width: 65px;
