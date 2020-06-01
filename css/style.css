@@ -1,0 +1,202 @@
+.container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   background: rgb(45, 45, 45);
+   border: 1px solid red;
+}
+
+.center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+
+.svg-style {
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+#square {
+   background: url(../assets/square.svg);
+   /* border: .5px solid red; */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 153.3px;
+   height: 153.3px;
+   fill: grey;
+   /* opacity: 0.4; */
+}
+
+/* ----- Head and Joints ----- */
+.head-con {
+   position: absolute;
+   top: 130px;
+   left: 223px;
+   width: 56.6px;
+   height: 104.1px;
+   overflow: hidden;
+}
+
+#head {
+   background: url(../assets/updated/head.svg);
+   position: absolute;
+   top: 70px;
+   width: 56.6px;
+   height: 104.1px;
+}
+
+#upper-joint {
+   background: url(../assets/updated/upper-joint.svg);
+   position: absolute;
+   top: 205px;
+   left: 174px;
+   width: 151px;
+   height: 93.1px;
+   opacity: 1;
+}
+
+#lower-joint {
+   background: url(../assets/updated/lower-joint.svg);
+   position: absolute;
+   top: 283px;
+   left: 175px;
+   width: 151px;
+   height: 36.9px;
+}
+
+/* ----- Chest ----- */
+#chest {
+   background: url(../assets/updated/chest.svg);
+   position: absolute;
+   top: 177px;
+   left: 216px;
+   width: 70.2px;
+   height: 102.1px;
+}
+
+/* ----- Torso ----- */
+.torso-con {
+   position: absolute;
+   top: 234px;
+   left: 218px;
+   width: 65px;
+   height: 128.3px;
+   overflow: hidden;
+}
+
+#torso {
+   background: url(../assets/updated/torso.svg);
+   background-size: contain;
+   position: absolute;
+   width: 65px;
+   height: 128.3px;
+}
+
+/* ----- Shoulders and Hips ----- */
+#left-shoulder-morph,
+#right-shoulder-morph,
+#left-hip-morph,
+#right-hip-morph {
+   visibility: hidden;
+}
+
+.left-shoulder-con,
+.right-shoulder-con,
+.left-hip-con,
+.right-hip-con {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 1;
+}
+
+.left-shoulder-con {
+   /* border: .5px solid red; */
+   top: 173.5px;
+   left: 173.5px;
+}
+
+.shoulder-left-wing-con {
+   position: absolute;
+   top: 120px;
+   left: 108.5px;
+   width: 90.6px;
+   height: 103.4px;
+   /* border: 1px solid red; */
+   overflow:hidden;
+}
+
+#shoulder-left-wing {
+   position: absolute;
+   right:0;
+   background: url(../assets/updated/shoulders/shoulders/shoulder-left-wing-morph.svg);
+   background-repeat: no-repeat;
+   width: 85.6px;
+   height: 103.4px;
+}
+
+
+.right-shoulder-con {
+   /* border: .5px solid red; */
+   top: 173.5px;
+   left: 250px;
+}
+.left-hip-con {
+   /* border: .5px solid red; */
+   top: 261.5px;
+   left: 173.5px;
+}
+.right-hip-con {
+   /* border: .5px solid red; */
+   top: 261.5px;
+   left: 250px;
+}
+
+/* ----- Legs ----- */
+#left-leg {
+   background: url(../assets/updated/legs/leg-left.svg);
+   position: absolute;
+   width: 33.4px;
+   height: 92.3px;
+   visibility: hidden;
+}
+
+#right-leg {
+   background: url(../assets/updated/legs/leg-right.svg);
+   position: absolute;
+   width: 33.4px;
+   height: 92.3px;
+   visibility: hidden;
+}
+
+/* ----- Arms ----- */
+.left-arm-con {
+   position: absolute;
+   width: 128.7px;
+   height: 159.1px;
+   visibility: hidden;
+}
+
+.right-arm-con {
+   position: absolute;
+   width: 101.3px;
+   height: 168.1px;
+   visibility: hidden;
+}
+
+#ref {
+   background: url(../assets/ref.png);
+   background-position: center;
+   background-size: contain;
+   width: 500px;
+   height: 500px;
+   position: absolute;
+   left: -16px;
+   top: -15px;
+   opacity: 0.3;
+   transform: scale(0.9);
+}
