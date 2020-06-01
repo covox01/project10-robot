@@ -17,7 +17,7 @@ function frame2() {
       .to(".upper", .2, {y: -25, ease: Back.easeOut.config(2)}, "sync")
       .to(".lower", .2, {y: 0, ease: Back.easeOut.config(3)}, "sync")
 
-   TweenMax.delayedCall(1, frame3)
+   TweenMax.delayedCall(.8, frame3)
 }
 
 function frame3(){
@@ -44,9 +44,10 @@ function frame3(){
 
 function frame4(){
    TweenMax.set("#shoulder-left-wing", {x: 90, y: 40, display: "block"})
+   TweenMax.set("#shoulder-right-wing", { x: -90, y: 40, display: "block" })
    var tl = new TimelineMax()
    tl
-      .to(".lower", .5, {y: -8, ease: Back.easeInOut.config(1)})
+      .to(".lower", .3, {y: -8, ease: Back.easeInOut.config(.5)})
       .to(".upper", .2, {y: -25, ease: Back.easeOut.config(2)}, "sync")
       .to(".lower", .2, {y: 0, ease: Back.easeOut.config(3)}, "sync")
       .to("#chest", .2, {y: -15, ease: Back.easeOut.config(2)}, "sync")
