@@ -5,7 +5,7 @@
    width: 500px;
    height: 500px;
    background: rgb(45, 45, 45);
-   border: 1px solid red;
+   overflow: hidden;
 }
 
 .center {
@@ -21,14 +21,13 @@
 
 #square {
    background: url(../assets/square.svg);
-   /* border: .5px solid red; */
+   background-repeat: no-repeat;
    position: absolute;
    top: 50%;
    left: 50%;
    width: 153.3px;
    height: 153.3px;
    fill: grey;
-   /* opacity: 0.4; */
 }
 
 /* ----- Head and Joints ----- */
@@ -39,12 +38,11 @@
    width: 56.6px;
    height: 117px;
    overflow: hidden;
-   display: none;
-   /* border: 1px solid red; */
 }
 
 #head {
    background: url(../assets/updated/head.svg);
+   background-repeat: no-repeat;
    position: absolute;
    bottom: 0;
    width: 56.6px;
@@ -54,6 +52,7 @@
 
 #upper-joint {
    background: url(../assets/updated/upper-joint.svg);
+   background-repeat: no-repeat;
    position: absolute;
    top: 205px;
    left: 174px;
@@ -64,6 +63,7 @@
 
 #lower-joint {
    background: url(../assets/updated/lower-joint.svg);
+   background-repeat: no-repeat;
    position: absolute;
    top: 283px;
    left: 175px;
@@ -74,6 +74,7 @@
 /* ----- Chest ----- */
 #chest {
    background: url(../assets/updated/chest.svg);
+   background-repeat: no-repeat;
    position: absolute;
    top: 177px;
    left: 216px;
@@ -93,6 +94,7 @@
 
 #torso {
    background: url(../assets/updated/torso.svg);
+   background-repeat: no-repeat;
    background-repeat: no-repeat;
    background-size: contain;
    position: absolute;
@@ -116,10 +118,15 @@
    top: 0;
    left: 0;
    opacity: 1;
+   /* border: 1px solid red; */
+}
+
+#left-shoulder, #left-shoulder-morph, #left-hip, #left-hip-morph {
+   position: absolute;
+   right: 200px;
 }
 
 .left-shoulder-con {
-   /* border: .5px solid red; */
    top: 173.5px;
    left: 173.5px;
 }
@@ -130,7 +137,6 @@
    left: 108.5px;
    width: 90.6px;
    height: 103.4px;
-   /* border: 1px solid red; */
    overflow: hidden;
 }
 
@@ -144,7 +150,6 @@
 }
 
 .right-shoulder-con {
-   /* border: .5px solid red; */
    top: 173.5px;
    left: 250px;
 }
@@ -155,7 +160,6 @@
    right: 107.5px;
    width: 90.6px;
    height: 103.4px;
-   /* border: 1px solid red; */
    overflow: hidden;
 }
 
@@ -169,7 +173,6 @@
 }
 
 .left-hip-con {
-   /* border: .5px solid red; */
    top: 261.5px;
    left: 173.5px;
 }
@@ -181,11 +184,11 @@
    width: 87px;
    height: 58.5px;
    overflow: hidden;
-   /* border: 1px solid red; */
 }
 
 #hip-left-wing {
    background: url(../assets/updated/hips/hip-left-wing-morph.svg);
+   background-repeat: no-repeat;
    position: absolute;
    top: 0;
    right: 0;
@@ -194,7 +197,6 @@
 }
 
 .right-hip-con {
-   /* border: .5px solid red; */
    top: 261.5px;
    left: 250px;
 }
@@ -206,11 +208,11 @@
    width: 87px;
    height: 58.5px;
    overflow: hidden;
-   /* border: 1px solid green; */
 }
 
 #hip-right-wing {
    background: url(../assets/updated/hips/hip-right-wing-morph.svg);
+   background-repeat: no-repeat;
    position: absolute;
    top: 0;
    left: 0;
@@ -221,6 +223,7 @@
 /* ----- Legs ----- */
 #left-leg {
    background: url(../assets/updated/legs/leg-left.svg);
+   background-repeat: no-repeat;
    background-size: contain;
    position: absolute;
    top: 293px;
@@ -228,12 +231,11 @@
    width: 33.4px;
    height: 92.3px;
    display: none;
-   /* border: 1px solid red; */
-   /* visibility: hidden; */
 }
 
 #right-leg {
    background: url(../assets/updated/legs/leg-right.svg);
+   background-repeat: no-repeat;
    background-size: contain;
    position: absolute;
    top: 293px;
@@ -241,8 +243,6 @@
    width: 33.4px;
    height: 92.3px;
    display: none;
-   /* border: 1px solid green; */
-   /* visibility: hidden; */
 }
 
 /* ----- Arms ----- */
