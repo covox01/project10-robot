@@ -34,19 +34,22 @@
 /* ----- Head and Joints ----- */
 .head-con {
    position: absolute;
-   top: 130px;
+   top: 66px;
    left: 223px;
    width: 56.6px;
-   height: 104.1px;
+   height: 117px;
    overflow: hidden;
+   display: none;
+   /* border: 1px solid red; */
 }
 
 #head {
    background: url(../assets/updated/head.svg);
    position: absolute;
-   top: 70px;
+   bottom: 0;
    width: 56.6px;
    height: 104.1px;
+   display: none;
 }
 
 #upper-joint {
@@ -172,10 +175,11 @@
 
 .hip-left-wing-con {
    position: absolute;
-   left: 107px;
+   left: 111px;
    top: 251px;
    width: 87px;
    height: 58.5px;
+   overflow: hidden;
    /* border: 1px solid red; */
 }
 
@@ -200,6 +204,7 @@
    top: 251px;
    width: 87px;
    height: 58.5px;
+   overflow: hidden;
    /* border: 1px solid green; */
 }
 
@@ -215,18 +220,28 @@
 /* ----- Legs ----- */
 #left-leg {
    background: url(../assets/updated/legs/leg-left.svg);
+   background-size: contain;
    position: absolute;
+   top: 293px;
+   left: 150px;
    width: 33.4px;
    height: 92.3px;
-   visibility: hidden;
+   display: none;
+   /* border: 1px solid red; */
+   /* visibility: hidden; */
 }
 
 #right-leg {
    background: url(../assets/updated/legs/leg-right.svg);
+   background-size: contain;
    position: absolute;
+   top: 293px;
+   right: 150px;
    width: 33.4px;
    height: 92.3px;
-   visibility: hidden;
+   display: none;
+   /* border: 1px solid green; */
+   /* visibility: hidden; */
 }
 
 /* ----- Arms ----- */
@@ -234,14 +249,18 @@
    position: absolute;
    width: 128.7px;
    height: 159.1px;
-   visibility: hidden;
+   top: 200px;
+   left: 50px;
+   display: none;
 }
 
 .right-arm-con {
    position: absolute;
    width: 101.3px;
    height: 168.1px;
-   visibility: hidden;
+   right: 59px;
+   top: 72px;
+   display: none;
 }
 
 #ref {
